@@ -53,3 +53,7 @@ img = qr.make_image(fill='black', back_color='white')
 img.save("product_qr_code.png")
 
 print("✅ QR code generated and saved as 'product_qr_code.png'")
+
+# to download the qr code
+from google.colab import files
+files.download("product_qr_code.png")
